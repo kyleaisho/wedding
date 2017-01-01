@@ -10,7 +10,9 @@ function getFormValues () {
     return {
         "entry.636979296": document.getElementById("name-text").value,
         "entry.1800459233": document.getElementById("email-text").value,
-        "entry.2004245756": document.getElementById("phone-text").value
+        "entry.2004245756": document.getElementById("phone-text").value,
+        "entry.969010078": document.getElementById("guest-text").value,
+        "entry.278213806": document.getElementById("dietary-text").value
     };
 }
 
@@ -20,6 +22,8 @@ function resetForm () {
     document.getElementById("name-text").value = "";
     document.getElementById("email-text").value = "";
     document.getElementById("phone-text").value = "";
+    document.getElementById("guest-text").value = "";
+    document.getElementById("dietary-text").value = "";
 }
 
 function postToGoogle () {
