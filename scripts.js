@@ -65,8 +65,7 @@ function postToGoogle () {
             data: formValues,
             type: "POST",
             dataType: "xml",
-            success: function () { showSnackbar(1); },
-            error: function () { showSnackbar(2); }
+            status:{ 0: function () { showSnackbar(1); }, 200: function () { showSnackbar(2); } }
         });
     } else {
         showSnackbar(3);
