@@ -6,9 +6,11 @@ function isEmailValid (email) {
 }
 
 function getFormValues () {
-    var form = document.getElementById("rsvp-form").children;
+    var coming = document.getElementById("option-1").checked;
+
     return {
         "entry.636979296": document.getElementById("name-text").value,
+        "entry.1937342378": coming ? "yes" : "no",
         "entry.1800459233": document.getElementById("email-text").value,
         "entry.2004245756": document.getElementById("phone-text").value,
         "entry.969010078": document.getElementById("guest-text").value,
